@@ -10,6 +10,8 @@ import { CrewModule } from './modules/crew/crew.module';
   imports: [
     GraphQLModule.forRoot({
       autoSchemaFile: true,
+      introspection: true,
+      playground: true,
     }),
     CharactersModule,
     ApiConsumerModule,
